@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:background="@color/colorTabBack">
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/noTitleitem1_3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="45%"
+            android:baselineAligned="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/noTitleitem1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/noTitleimage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/noTitleimage1"
+                    >
+                    <include
+                        android:id="@+id/noTitlevip1"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:id="@+id/noTitleimage_msg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@color/colorImageMsg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/noTitleimage1"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTabBack"
+                    />
+
+                <TextView
+                    android:id="@+id/noTitleitemtext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/noTitleimage1"
+                    android:text="欢乐颂2"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTab"
+                    android:gravity="center|start"
+                    android:layout_marginStart="3dp"
+                    android:maxLines="2"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/noTitleitem2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                >
+
+                <ImageView
+                    android:id="@+id/noTitleimage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/noTitleimage2"
+                    >
+                    <include
+                        android:id="@+id/noTitlevip2"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/noTitleimage_msg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@color/colorImageMsg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/noTitleimage2"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTabBack"
+                    />
+
+                <TextView
+                    android:id="@+id/noTitleitemtext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/noTitleimage2"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTab"
+                    android:gravity="center|start"
+                    android:layout_marginStart="3dp"
+                    android:maxLines="2"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/noTitleitem3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+                <ImageView
+                    android:id="@+id/noTitleimage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/noTitleimage3"
+                    >
+                    <include
+                        android:id="@+id/noTitlevip3"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/noTitleimage_msg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@color/colorImageMsg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/noTitleimage3"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTabBack"
+                    />
+
+                <TextView
+                    android:id="@+id/noTitleitemtext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/noTitleimage3"
+                    android:textColor="@color/colorTab"
+                    android:gravity="center|start"
+                    android:textSize="12sp"
+                    android:layout_marginStart="3dp"
+                    android:maxLines="2"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noTitleitem4_6"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="55%"
+            android:baselineAligned="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/noTitleitem4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/noTitleimage4"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/noTitleimage4"
+                    >
+                    <include
+                        android:id="@+id/noTitlevip4"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/noTitleimage_msg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@color/colorImageMsg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/noTitleimage4"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTabBack"
+                    />
+
+                <TextView
+                    android:id="@+id/noTitleitemtext4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/noTitleimage4"
+                    android:textColor="@color/colorTab"
+                    android:gravity="center|start"
+                    android:textSize="12sp"
+                    android:layout_marginStart="3dp"
+                    android:maxLines="2"
+                    android:layout_marginBottom="50dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/noTitleitem5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp">
+
+                <ImageView
+                    android:id="@+id/noTitleimage5"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/noTitleimage5"
+                    >
+                    <include
+                        android:id="@+id/noTitlevip5"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/noTitleimage_msg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@color/colorImageMsg"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTabBack"
+                    android:layout_above="@+id/noTitleitemtext5"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/noTitleitemtext5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/noTitleimage5"
+                    android:textColor="@color/colorTab"
+                    android:gravity="center|start"
+                    android:textSize="12sp"
+                    android:layout_marginStart="3dp"
+                    android:maxLines="2"
+                    android:layout_marginBottom="50dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/noTitleitem6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp">
+
+                <ImageView
+                    android:id="@+id/noTitleimage6"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/noTitleimage6"
+                    >
+                    <include
+                        android:id="@+id/noTitlevip6"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/noTitleimage_msg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@color/colorImageMsg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/noTitleimage6"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTabBack"
+                    />
+
+                <TextView
+                    android:id="@+id/noTitleitemtext6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/noTitleimage6"
+                    android:textColor="@color/colorTab"
+                    android:gravity="center|start"
+                    android:textSize="12sp"
+                    android:layout_marginStart="3dp"
+                    android:maxLines="2"
+                    android:layout_marginBottom="50dp"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.percent.PercentFrameLayout>
+</LinearLayout>

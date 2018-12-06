@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NewQIY</string>
+    <string name="mine">我的</string>
+    <string name="recom">推荐</string>
+    <string name="dialog_search">搜索</string>
+    <string name="TV">  电视剧</string>
+    <string name="MOVIE">  电影</string>
+    <string name="PLAY">  娱乐</string>
+    <string name="STAR">  综艺</string>
+    <string name="VIP">VIP</string>
+    <string name="GAOQING">1080P</string>
+    <string name="ZHUANTI">专题</string>
+    <string name="DUBO">独播</string>
+</resources>

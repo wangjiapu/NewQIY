@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingStart="12dp"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent = "30%"
+        app:layout_heightPercent = "75%"
+        android:id="@+id/guess_item_image"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_heightPercent = "20%"
+        android:text="2012-02-02"
+        android:background="#55000000"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_alignBottom="@+id/guess_item_image"
+        android:layout_alignEnd="@+id/guess_item_image"
+        android:id="@+id/guess_item_release_time"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a title."
+        android:id="@+id/guess_item_title"
+        android:layout_toEndOf="@id/guess_item_image"
+        android:layout_alignTop="@id/guess_item_image"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:maxLines="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is des."
+        android:textSize="10sp"
+        android:layout_alignStart="@id/guess_item_title"
+        android:layout_below="@id/guess_item_title"
+        android:layout_marginTop="8dp"
+        android:id="@+id/guess_item_des"
+        android:maxLines="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="46.5万次播放"
+        android:textSize="10sp"
+        android:layout_alignBottom="@id/guess_item_image"
+        android:layout_alignStart="@id/guess_item_title"
+        android:id="@+id/guess_item_play_count_text"
+        />
+
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menu_main_bg">#f2f2f2</color>
+    <color name="dialogbg">#00ffffff</color>
+    <color name="colormain">#5AA700</color>
+    <color name="iqiyiGreen">#5AA700</color>
+    <color name="me_layout_background">#ececec</color>
+    <color name="me_layout_item_background">#f7f6f6</color>
+    <color name="colorTab">#37c01e</color>
+    <color name="colorTabText">#000000</color>
+    <color name="colorTabBack">#ffff</color>
+    <color name="colorAllBack">#65bdc0ba</color>
+    <color name="colorRollBack">#8e080000</color>
+    <color name="ZhuanTiBack">#395bf7</color>
+    <color name="Transparency">#00ffffff</color>
+    <color name="colorDuBO">#e20000</color>
+    <color name="colorMinTitle">#578d57</color>
+    <color name="colorImageMsg">#85000000</color>
+</resources>

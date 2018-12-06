@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/mplayer_content"
+        >
+        <com.qiyi.video.playcore.QiyiVideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myPlayer"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:id="@+id/myPlayer_progress_layout"
+            >
+            <ProgressBar
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                style="@style/ProgressBarNewStyle"
+                android:id="@+id/myPlayer_progressBar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_below="@id/myPlayer_progress_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/myPlayer_progress_text"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:background="#55000000"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度：50%"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#55000000"
+            android:padding="10dp"
+            android:layout_above="@id/myPlayer_progress_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/myPlayer_brightness"
+            android:maxLines="1"
+            android:textSize="25sp"
+            android:visibility="invisible"
+            />
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/myPlayer_bottomBar"
+            android:background="#55000000"
+
+            >
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent = "10%"
+                app:layout_heightPercent = "100%"
+                android:src="@drawable/scrennbuttonfull"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/myPlayer_fullScreenButton"
+
+                />
+            <ImageView
+                android:padding="2dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent = "7%"
+                app:layout_heightPercent = "100%"
+                android:id="@+id/myPlayer_play_button"
+                android:src="@drawable/pause"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent = "11.5%"
+                app:layout_heightPercent = "100%"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/totlaTimeText"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_toEndOf="@id/myPlayer_play_button"
+                android:textSize="11sp"
+                />
+            <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent = "60%"
+                app:layout_heightPercent = "100%"
+                android:id="@+id/myPlayer_SeekBar"
+                android:thumb="@drawable/seekbar_dragball"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/totlaTimeText"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent = "11.5%"
+                app:layout_heightPercent = "100%"
+                android:id="@+id/currentTimeText"
+                android:layout_toEndOf="@id/myPlayer_SeekBar"
+                android:layout_alignParentBottom="true"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="11sp"
+                />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/mplayer_content"
+        android:id="@+id/mplayer_recommendListLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/isCollect"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/collectno"
+                    android:layout_marginTop="38dp"/>
+
+                <TextView
+                    android:id="@+id/video_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is a title"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/video_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/video_title"
+                    android:layout_marginTop="7.5dp"
+                    android:text="类型："
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/video_type_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/video_type_text"
+                    android:layout_toEndOf="@id/video_type_text"
+                    android:text="国内 国语 评论"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/play_count_image"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/video_type_data"
+                    android:layout_marginTop="7.5dp"
+                    android:src="@drawable/play_num" />
+
+                <TextView
+                    android:id="@+id/play_count_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/play_count_image"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/play_count_image"
+                    android:text="33.8万"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/player_vip_flag"
+                    android:layout_width="22dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="#63B504"
+                    android:gravity="center"
+                    android:text="VIP"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f0eaea"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猜你喜欢"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/player_guess_list"
+                    android:background="#f0eaea"
+                    >
+                </android.support.v7.widget.RecyclerView>
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ProgressBarNewStyle"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/myPlayer_guessList_LoadingBar"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

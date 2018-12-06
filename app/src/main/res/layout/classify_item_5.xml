@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="570dp"
+    android:background="@color/colorTabBack"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/colorTab"/>
+
+    <LinearLayout
+        android:id="@+id/DandZItem_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="8%">
+
+        <TextView
+            android:id="@+id/DandZtitle_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTabText"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/DandZtitle_Image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp" />
+
+    </LinearLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/weightImageItem"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_heightPercent="33%">
+
+            <ImageView
+                android:id="@+id/wImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/wImageMsg"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/wImage"
+                android:background="@drawable/classify_background"
+                android:gravity="center_horizontal|start"
+                android:textColor="@color/colorTabBack"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/wclassify_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:foreground="@drawable/ripple_classify_view"
+            android:orientation="vertical"
+            app:layout_heightPercent="33%"
+            app:layout_widthPercent="50%">
+
+            <FrameLayout
+                android:id="@+id/wclassify_3_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_margin="5dp"
+                android:foreground="@drawable/ripple_classify_view">
+
+                <ImageView
+                    android:id="@+id/wclassify_3_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <TextView
+                    android:id="@+id/wimage_msg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@color/colorImageMsg"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textColor="@color/colorTabBack"
+                    android:textSize="12sp" />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/wbig_title3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1.8"
+                android:gravity="bottom|start"
+                android:text="程序猿的日常"
+                android:textColor="@color/colorTab"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/wmin_title3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1.2"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="燃烧生命已成常态"
+                android:textColor="@color/colorMinTitle"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/wclassify_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|end"
+            android:foreground="@drawable/ripple_classify_view"
+            android:orientation="vertical"
+            app:layout_heightPercent="33%"
+            app:layout_widthPercent="50%">
+
+            <FrameLayout
+                android:id="@+id/wclassify_2_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_margin="5dp"
+                android:foreground="@drawable/ripple_classify_view">
+
+                <ImageView
+                    android:id="@+id/wclassify_2_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/wimage_msg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@color/colorImageMsg"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textColor="@color/colorTabBack"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/wbig_title2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1.8"
+                android:gravity="bottom|start"
+                android:text="程序猿的日常"
+                android:textColor="@color/colorTab"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/wmin_title2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1.2"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="燃烧生命已成常态"
+                android:textColor="@color/colorMinTitle"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wclassify_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:foreground="@drawable/ripple_classify_view"
+            android:orientation="vertical"
+            app:layout_heightPercent="33%"
+            app:layout_widthPercent="50%">
+
+            <FrameLayout
+                android:id="@+id/wclassify_1_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_margin="5dp"
+                android:foreground="@drawable/ripple_classify_view">
+
+                <ImageView
+                    android:id="@+id/wclassify_1_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/wimage_msg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@color/colorImageMsg"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textColor="@color/colorTabBack"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/wbig_title1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1.8"
+                android:gravity="bottom|start"
+                android:text="程序猿的日常"
+                android:textColor="@color/colorTab"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/wmin_title1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1.2"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="燃烧生命已成常态"
+                android:textColor="@color/colorMinTitle"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wclassify_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|end"
+            android:foreground="@drawable/ripple_classify_view"
+            android:orientation="vertical"
+            app:layout_heightPercent="33%"
+            app:layout_widthPercent="50%">
+
+            <FrameLayout
+                android:id="@+id/wclassify_4_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_margin="5dp"
+                android:foreground="@drawable/ripple_classify_view">
+
+                <ImageView
+                    android:id="@+id/wclassify_4_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <TextView
+                    android:id="@+id/wimage_msg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@color/colorImageMsg"
+                    android:gravity="center"
+                    android:text="更新至20集"
+                    android:textColor="@color/colorTabBack"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/wbig_title4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1.8"
+                android:gravity="bottom|start"
+                android:text="程序猿的日常"
+                android:textColor="@color/colorTab"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/wmin_title4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1.2"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="燃烧生命已成常态"
+                android:textColor="@color/colorMinTitle"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </android.support.percent.PercentFrameLayout>
+</LinearLayout>

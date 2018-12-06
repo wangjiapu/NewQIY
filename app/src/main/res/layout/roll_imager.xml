@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:background="@color/colorTabBack"
+    tools:context="xiyou3g.example.com.newqiy.views.CycleViewPager">
+
+    <xiyou3g.example.com.newqiy.views.CycleViewPager
+        android:id="@+id/cycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+</RelativeLayout>

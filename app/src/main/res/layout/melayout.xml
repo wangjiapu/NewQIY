@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/colorTabText"/>
+
+    <TextView
+        android:background="@color/colorTabText"
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/me_layout_background"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/me_layout_item_background"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_login"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/userlog"/>
+
+                    <TextView
+                        android:id="@+id/user_login_in"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="登录"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/mid"
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:text="|"
+                        android:textColor="@color/me_layout_background"
+                        android:gravity="center"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:id="@+id/user_register"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="注册"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/isOpenVIP"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@color/me_layout_item_background">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/vip"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="我的VIP会员"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"/>
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rightdir"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/history"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@color/me_layout_item_background">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/history"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="观看历史"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"/>
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rightdir"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/collect"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@color/me_layout_item_background">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/favorite"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="我的收藏"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"/>
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rightdir"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/setting"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@color/me_layout_item_background">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/setting"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="设置"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"/>
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rightdir"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/help"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@color/me_layout_item_background">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/help"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="帮助反馈"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"/>
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rightdir"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/us"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@color/me_layout_item_background">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/us"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="关于我们"
+                        android:textSize="16sp"
+                        android:textColor="#000"
+                        android:gravity="center|left"
+                        android:paddingLeft="20dp"/>
+
+                    <ImageView
+                        android:layout_marginRight="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rightdir"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

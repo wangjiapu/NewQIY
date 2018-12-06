@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/play_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/loading"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/play_dec"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="#595858"
+                android:text="hahah"/>
+            <TextView
+                android:id="@+id/play_score"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:textColor="#595858"
+                android:text="200次" />
+            <TextView
+                android:id="@+id/play_type"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#595858"
+                android:text="电视剧"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

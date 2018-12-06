@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:background="@color/colorTabBack"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/colorTab" />
+
+
+    <LinearLayout
+        android:id="@+id/pager_title"
+        app:layout_heightPercent="8%"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/textStartImage1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ds" />
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center_vertical"
+            android:text="  电视剧"
+            android:textColor="@color/colorTabText"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/classify_4"
+            app:layout_heightPercent="58%"
+            app:layout_widthPercent="50%"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|end"
+            android:foreground="@drawable/ripple_classify_view"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/classify_4_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_margin="5dp"
+                android:foreground="@drawable/ripple_classify_view">
+
+                <ImageView
+                    android:id="@+id/classify_4_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/Tab_Video4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <include
+                        android:id="@+id/vip_4"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/gaoqin_4"
+                        layout="@layout/gaoqin_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/zhuanti_4"
+                        layout="@layout/zhuanti_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/dubo_4"
+                        layout="@layout/dubo_tab"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/classify_4_pagertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/classify_background"
+                    android:gravity="center_horizontal|start"
+                    android:text="更新至102集"
+                    android:textColor="@color/colorTabBack"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/big_title4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="bottom|start"
+                android:text="程序猿的日常"
+                android:textColor="@color/colorTab"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/min_title4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="58dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="燃烧生命已成常态"
+                android:textColor="@color/colorMinTitle"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/classify_3"
+            app:layout_heightPercent="58%"
+            app:layout_widthPercent="50%"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:foreground="@drawable/ripple_classify_view"
+            android:orientation="vertical"
+
+            >
+
+            <FrameLayout
+                android:id="@+id/classify_3_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_margin="5dp"
+                android:foreground="@drawable/ripple_classify_view">
+
+                <ImageView
+                    android:id="@+id/classify_3_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/Tab_Video3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <include
+                        android:id="@+id/vip_3"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/gaoqin_3"
+                        layout="@layout/gaoqin_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/zhuanti_3"
+                        layout="@layout/zhuanti_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/dubo_3"
+                        layout="@layout/dubo_tab"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/classify_3_pagertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/classify_background"
+                    android:gravity="center_horizontal|start"
+                    android:text="更新至102集"
+                    android:textColor="@color/colorTabBack"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/big_title3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="bottom|start"
+                android:text="程序猿的日常"
+                android:textColor="@color/colorTab"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/min_title3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="58dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="燃烧生命已成常态"
+                android:textColor="@color/colorMinTitle"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/classify_2"
+            app:layout_heightPercent="42%"
+            app:layout_widthPercent="50%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:foreground="@drawable/ripple_classify_view"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/classify_2_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_margin="5dp"
+                android:foreground="@drawable/ripple_classify_view">
+
+                <ImageView
+                    android:id="@+id/classify_2_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/classify_2_pagertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/classify_background"
+                    android:gravity="center_horizontal|start"
+                    android:text="更新至102集"
+                    android:textColor="@color/colorTabBack"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:id="@+id/Tab_Video2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <include
+                        android:id="@+id/vip_2"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/gaoqin_2"
+                        layout="@layout/gaoqin_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/zhuanti_2"
+                        layout="@layout/zhuanti_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/dubo_2"
+                        layout="@layout/dubo_tab"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/big_title2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="bottom|start"
+                android:text="程序猿的日常"
+                android:textColor="@color/colorTab"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/min_title2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="燃烧生命已成常态"
+                android:textColor="@color/colorMinTitle"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/classify_1"
+            app:layout_heightPercent="42%"
+            app:layout_widthPercent="50%"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:foreground="@drawable/ripple_classify_view"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/classify_1_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_margin="5dp"
+                android:foreground="@drawable/ripple_classify_view">
+
+                <ImageView
+                    android:id="@+id/classify_1_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:id="@+id/Tab_Video1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <include
+                        android:id="@+id/vip_1"
+                        layout="@layout/vip_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/gaoqin_1"
+                        layout="@layout/gaoqin_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/zhuanti_1"
+                        layout="@layout/zhuanti_tab"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/dubo_1"
+                        layout="@layout/dubo_tab"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/classify_1_pagertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/classify_background"
+                    android:gravity="center_horizontal|start"
+                    android:text="更新至102集"
+                    android:textColor="@color/colorTabBack"
+                    android:textSize="10sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/big_title1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="bottom|start"
+                android:text="程序猿的日常"
+                android:textColor="@color/colorTab"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/min_title1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="燃烧生命已成常态"
+                android:textColor="@color/colorMinTitle"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </android.support.percent.PercentFrameLayout>
+</LinearLayout>
